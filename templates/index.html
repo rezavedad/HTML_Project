@@ -7,6 +7,9 @@
         <title>Reza's Webpage!</title>
     </head>
     <body style="background-color:lightblue;">
+
+        <a href="#footer">Go to bottom</a> <!-- A) go to bottom -->
+
         <h1 style="color: red;">This is the first heading.</h1> <!-- h2 smaller, h1 to h6 -->
         <br><br><br>
         <hr style="color: red;">
@@ -25,74 +28,129 @@
 
 <!-- Link a website, email, file-->
 
-            <a href="https://www.google.com"">Google's Homepage!</a>
-            <br>
-            <a href="https://www.google.com" target="_blank">Google's Homepage! (in a new tab)</a> <!-- Target: New page -->
-            <br>
-            <a href="page2.html"">About me!</a> <!-- relative URL (relativ to index html) -->
-            <br>
-            <a href="dir1/page3.html"">Contact</a> <!-- relative URL (relativ to index html) -->  <!-- ../ : back folder -->
-            <br>
-            <a href="R.png">Click to see the picture!</a>  <!-- reference to file -->
+        <a href="https://www.google.com"">Google's Homepage!</a>
+        <br>
+        <a href="https://www.google.com" target="_blank">Google's Homepage! (in a new tab)</a> <!-- Target: New page -->
+        <br>
+        <a href="page2.html"">About me!</a> <!-- relative URL (relativ to index html) -->
+        <br>
+        <a href="dir1/page3.html"">Contact</a> <!-- relative URL (relativ to index html) -->  <!-- ../ : back folder -->
+        <br>
+        <a href="R.png">Click to see the picture!</a>  <!-- reference to file -->
 
 
     <!-- Images and resizing without destroying the aspect ratio-->
-            <br>
-            <br>
-            <img src="bf.jpg"> <!-- location of Images : source , 600x900-->
-            <br>
-            <br>
-            <img width="200" height="200" src="bf.jpg"> <!-- resizing, in pixel -->
-            <br>
-            <br>
-            <img width="300" height="450" src="bf.jpg"> <!-- resizing, in pixel , 600x900-->
-            <br>
-            <br>
-            <img width="500" src="https://wallpapercave.com/wp/UOJbW9k.jpg" alt="Sorry, picture is not any more available.">
-            <br>
-            <br>
-            <img height="300" src="https://wallpapercave.com/wp/UOJbW9k.jpg" alt="Sorry, picture is not any more available.">
+        <br>
+        <br>
+        <img src="bf.jpg"> <!-- location of Images : source , 600x900-->
+        <br>
+        <br>
+        <img width="200" height="200" src="bf.jpg"> <!-- resizing, in pixel -->
+        <br>
+        <br>
+        <img width="300" height="450" src="bf.jpg"> <!-- resizing, in pixel , 600x900-->
+        <br>
+        <br>
+        <img width="500" src="https://wallpapercave.com/wp/UOJbW9k.jpg" alt="Sorry, picture is not any more available.">
+        <br>
+        <br>
+        <img height="300" src="https://wallpapercave.com/wp/UOJbW9k.jpg" alt="Sorry, picture is not any more available.">
 
-            <br>
-            <br>
-            <a href="https://wallpapercave.com/wp/UOJbW9k.jpg"><img src="bf.jpg"></a>  <!-- clickable pic to another pic-->
+        <br>
+        <br>
+        <a href="https://wallpapercave.com/wp/UOJbW9k.jpg"><img src="bf.jpg"></a>  <!-- clickable pic to another pic-->
 
 
      <!-- Videos and Youtube iFrames -->
-            <br>
-            <br>
-            <video src="vid.mp4" controls width="700" poster="thumbnail.jpg">Sorry, video is not any more available.</video> <!-- thumbnail of video, controls, autoplay, loop -->
-            <br>
-            <br>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/cGYyOY4XaFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <br>
-            <br>
+        <br>
+        <br>
+        <video src="vid.mp4" controls width="700" poster="thumbnail.jpg">Sorry, video is not any more available.</video> <!-- thumbnail of video, controls, autoplay, loop -->
+        <br>
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cGYyOY4XaFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <br>
 
 
         <!-- Lists -->
 
-            <ol type="A"> <!-- <ul> : unordered list : container, <ol> : ordered list -->
-                <li><a href="#">Apple</li></a> <!-- # : reload -->
-                <li>Samsung</li>
-                    <ol>
-                        <li>s20</li>
-                        <li>s21</li>
-                    </ol>
-                <li>Nokia</li>
-            </ol>
+        <ol type="A"> <!-- <ul> : unordered list : container, <ol> : ordered list -->
+            <li><a href="#">Apple</li></a> <!-- # : reload -->
+            <li>Samsung</li>
+                <ol>
+                    <li>s20</li>
+                    <li>s21</li>
+                </ol>
+            <li>Nokia</li>
+        </ol>
 
-            <br>
-            <dl> <!-- discriptio list -->
-                <dt>Apple</dt> <!-- discriptio term -->
-                <dd>They are red.</dd> <!-- discriptio -->
-            </dl>
+        <br>
+        <dl> <!-- discriptio list -->
+            <dt>Apple</dt> <!-- discriptio term -->
+            <dd>They are red.</dd> <!-- discriptio -->
+        </dl>
 
-            <br>
-            <br>
+        <br>
+        <br>
 
         <!-- Tables -->
 
+        <table>
+            <thead>
+                <caption><h2>Table of numbers</h2></caption>
+                 <tr> <!-- Tables row-->
+                     <th>num1</th> <!-- Tables data-->
+                     <th>num2</th>
+                     <th>num3</th>
+                 </tr>
+            </thead>
+
+            <tbody>
+                <tr> <!-- Tables row-->
+                 <td>One</td> <!-- Tables data-->
+                 <td>two</td>
+                 <td>three</td>
+                    <td>three and a half</td>
+                </tr>
+                <tr> <!-- Tables row-->
+                 <td>four</td> <!-- Tables data-->
+                 <td>five</td>
+                 <td>six</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
 
 
+
+
+        <!-- spans (inline container) and divs (block container : takes entire width) -->
+
+        <a href="#">link1</a>   <!-- inline display -->
+        <a href="#">link2003</a>
+        <hr>
+        <p>Parag</p>    <!-- block display -->
+        <p>Paragraph</p>
+        <br>
+        <hr>
+        <span>span1</span>
+        <span>span2</span>
+        <hr>
+        <div>div1</div>
+        <div>div2</div>
+
+
+
+        <!-- input and form --> <!-- ***** -->
+
+
+
+
+
+
+        <!-- Footer -->
+
+        <footer id="footer"></footer>  <!-- B) go to bottom -->
+        <a href="#">Go to top</a>  <!-- go to top -->
         </body>
 </html>
